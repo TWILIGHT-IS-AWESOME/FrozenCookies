@@ -148,14 +148,13 @@ var numberFormatters = [
 
   (function () {
     return function (value) {
-      var base = 1.0;
+      var exp, num;
       if (value < 10) {
         return value;
       }
-      while (value / base >= 10) {
-        base++;
-      }
-      return value + '*10<sup>' + base + '</sup>';
+      exp = Math.floor(Math.log(value) / Math.LN10),
+      num = Math.round((value / Math.pow(10, exp)) * 100) / 100;
+      return num + '*10^' + exp;
     };
   }())
 ];
