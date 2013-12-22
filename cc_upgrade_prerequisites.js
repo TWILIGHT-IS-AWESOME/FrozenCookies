@@ -9,6 +9,11 @@ FrozenCookies.preferenceValues = {
     'display':["Autoclick GC OFF", "Autoclick GC ON"],
     'default':0
   },
+  'autoReindeer':{
+    'hint':'Automatically click Reindeers when they appear',
+    'display':["Autoclick Reindeers OFF", "Autoclick Reindeers ON"],
+    'default':0
+  },
   'autoWrinkler':{
     'hint':'Automatically pop wrinklers efficiently (as fast as possible before you have all halloween cookies, then wait until a purchase)',
     'display':['Autopop Wrinklers OFF', 'Autopop Wrinklers ON'],
