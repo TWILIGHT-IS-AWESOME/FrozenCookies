@@ -10,8 +10,8 @@ FrozenCookies.preferenceValues = {
     'default':0
   },
   'autoReindeer':{
-    'hint':'Automatically click Reindeers when they appear',
-    'display':["Autoclick Reindeers OFF", "Autoclick Reindeers ON"],
+    'hint':'Automatically click reindeers when they appear',
+    'display':["Autoclick reindeers OFF", "Autoclick reindeers ON"],
     'default':0
   },
   'autoWrinkler':{
