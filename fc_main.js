@@ -975,7 +975,11 @@ function autoCookie() {
     // This apparently *has* to stay here, or else fast purchases will multi-click it.
     if (Game.goldenCookie.life && FrozenCookies.autoGC) {
       Game.goldenCookie.click();
+     }
+    if (Game.seasonPopup.life && FrozenCookies.autoReindeer) {
+      Game.seasonPopup.click();
     }
+    if
     if (FrozenCookies.autoBlacklistOff) {
       autoBlacklistOff();
     }
