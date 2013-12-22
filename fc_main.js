@@ -978,8 +978,7 @@ function autoCookie() {
      }
     if (Game.seasonPopup.life && FrozenCookies.autoReindeer) {
       Game.seasonPopup.click();
-    }
-    if
+     }
     if (FrozenCookies.autoBlacklistOff) {
       autoBlacklistOff();
     }
