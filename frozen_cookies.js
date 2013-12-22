@@ -2,7 +2,7 @@
 var FrozenCookies = {
   'baseUrl': 'https://raw.github.com/TWILIGHT-IS-AWESOME/FrozenCookies/master',
   'branch' : 'M',
-  'version': 1.03934, plus reindeer support
+  'version': 1.03934
 };
 
 // Load external libraries
