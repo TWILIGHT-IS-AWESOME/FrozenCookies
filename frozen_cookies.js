@@ -1,8 +1,8 @@
 // Global Variables
 var FrozenCookies = {
-  'baseUrl': 'https://raw.github.com/pipino666/FrozenCookies/master',
+  'baseUrl': 'https://raw.github.com/TWILIGHT-IS-AWESOME/FrozenCookies/master',
   'branch' : 'M',
-  'version': 1.03934
+  'version': 1.03934, plus reindeer support
 };
 
 // Load external libraries
