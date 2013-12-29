@@ -257,9 +257,9 @@ function updateSpeed(base) {
 
 function wrinklerInfo() {
   $.each(Game.wrinklers, function() {
-  	FrozenCookies.wrinklercurrent += this.Frozencookies.wrinklercurrent;
+  	FrozenCookies.wrinklercurrent += this.FrozenCookies.wrinklercurrent;
   });
-  FrozenCookies.wrinklermultiplied = Frozencookies.wrinklercurrent * 1.1;
+  FrozenCookies.wrinklermultiplied = FrozenCookies.wrinklercurrent * 1.1;
 }
 
 function updateTimeTravelAmount() {
