@@ -260,6 +260,8 @@ function wrinklerInfo() {
   	FrozenCookies.wrinklercurrent += this.FrozenCookies.wrinklercurrent;
   });
   FrozenCookies.wrinklermultiplied = FrozenCookies.wrinklercurrent * 1.1;
+  return FrozenCookies.wrinklercurrent;
+  return FrozenCookies.wrinklermultiplied;
 }
 
 function updateTimeTravelAmount() {
