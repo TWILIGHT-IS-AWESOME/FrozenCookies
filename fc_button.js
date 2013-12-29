@@ -367,6 +367,7 @@ function FCMenu() {
       var wrinklerm = FrozenCookies.wrinklermultiplied;
       subsection.append($('<div />').addClass('listing').html('<b>Cookies sucked by wrinklers:</b> ' + wrinklerc;
       subsection.append($('<div />').addClass('listing').html('<b>Cookies the wrinklers will give you:</b> ' + wrinklerm;
+      var subsection = $('<div />').addClass('subsection');
       subsection.append($('<div />').addClass('title').html('Heavenly Chips Information'));
       var currHC = Game.prestige['Heavenly chips'];
       var resetHC = Game.HowMuchPrestige(Game.cookiesReset+Game.cookiesEarned);
