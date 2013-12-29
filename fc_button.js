@@ -363,8 +363,8 @@ function FCMenu() {
       menu.append(subsection);
       var subsection = $('<div />').addClass('subsection');
       subsection.append($('<div />').addClass('title').html('Wrinkler Information'));
-      subsection.append($('<div />').addClass('listing').html('<b>Cookies sucked by wrinklers:</b> '));
-      subsection.append($('<div />').addClass('listing').html('<b>Cookies the wrinklers will give you:</b> '));
+      subsection.append($('<div />').addClass('listing').html('<b>Cookies sucked by wrinklers:</b> ' + FrozenCookies.wrinklercurrent));
+      subsection.append($('<div />').addClass('listing').html('<b>Cookies the wrinklers will give you:</b> ' + FrozenCookies.wrinklermultiplied));
       var subsection = $('<div />').addClass('subsection');
       menu.append(subsection);
       subsection.append($('<div />').addClass('title').html('Heavenly Chips Information'));
