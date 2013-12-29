@@ -255,7 +255,7 @@ function wrinklerInfo() {
   stats = [],
     sucked = 0,
     multiplier = 1.1;
-  $.each(Game.wrinklers {
+  $.each(Game.wrinklers, function() {
   	sucked += this.sucked;
   });
   stats[0] = sucked;
