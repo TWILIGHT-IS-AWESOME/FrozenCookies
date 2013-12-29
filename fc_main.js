@@ -128,6 +128,7 @@ function fcBeautify (value) {
   }
 }
 
+
 function timeDisplay(seconds) {
   if (seconds === '---' || seconds === 0) {
     return 'Done!';
@@ -248,6 +249,19 @@ function updateSpeed(base) {
     updateLocalStorage();
     FCStart();
   }
+}
+
+function wrinklerInfo() {
+  var info;
+  var infom;
+  var current = 0;
+  $.each(Game.wrinklers, function() {
+  	current += this.current;
+  });
+  info = current;
+  infom = current * 1.1;
+  return info;
+  return infom;
 }
 
 function updateTimeTravelAmount() {
