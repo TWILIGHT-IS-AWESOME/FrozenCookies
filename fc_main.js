@@ -12,11 +12,7 @@ function setOverrides() {
   // Separate because these are user-input values
   FrozenCookies.cookieClickSpeed = preferenceParse('cookieClickSpeed',0);
   FrozenCookies.frenzyClickSpeed = preferenceParse('frenzyClickSpeed',0);
-  
-  // Wrinkler info
-  FrozenCookies.wrinklercurrent = 0;
-  FrozenCookies.wrinklermultiplied = 0;
-  
+
   // Becomes 0 almost immediately after user input, so default to 0
   FrozenCookies.timeTravelAmount = 0;
   
@@ -256,12 +252,15 @@ function updateSpeed(base) {
 }
 
 function wrinklerInfo() {
+  stats = [],
+    sucked = 0,
+    multiplier = 1.1;
   $.each(Game.wrinklers, function() {
-  	FrozenCookies.wrinklercurrent += this.FrozenCookies.wrinklercurrent;
+  	sucked += this.sucked;
   });
-  FrozenCookies.wrinklermultiplied = FrozenCookies.wrinklercurrent * 1.1;
-  return FrozenCookies.wrinklercurrent;
-  return FrozenCookies.wrinklermultiplied;
+  stats[0] = sucked;
+  stats[1] = sucked * multiplier;
+  return stats;
 }
 
 function updateTimeTravelAmount() {
